@@ -1,0 +1,8 @@
+{
+  "shipment": "WF-2026-108",
+  "destination": "APAC",
+  "parcels": 24,
+  "delivered": false,
+  "eta": null,
+  "services": ["freight", "fulfillment", "last-mile"]
+}

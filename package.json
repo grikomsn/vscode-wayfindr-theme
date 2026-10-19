@@ -1,0 +1,119 @@
+{
+  "name": "wayfindr-theme",
+  "displayName": "Wayfindr Theme",
+  "description": "Ten Wayfindr color themes: warm yellow, neutral gray, Soft and Contrast variants, plus the original Night and Day.",
+  "version": "0.3.0",
+  "publisher": "grikomsn",
+  "author": "Griko Nibras",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0",
+    "node": ">=22.11.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "wayfindr",
+    "dark",
+    "light",
+    "gold",
+    "warm",
+    "gray",
+    "contrast"
+  ],
+  "icon": "images/icon-direction.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grikomsn/vscode-wayfindr-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grikomsn/vscode-wayfindr-theme/issues"
+  },
+  "homepage": "https://github.com/grikomsn/vscode-wayfindr-theme#readme",
+  "galleryBanner": {
+    "color": "#101828",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "Wayfindr Dark",
+        "label": "Wayfindr Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wayfindr-dark-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Light",
+        "label": "Wayfindr Light",
+        "uiTheme": "vs",
+        "path": "./themes/wayfindr-light-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Gray Dark",
+        "label": "Wayfindr Gray Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wayfindr-gray-dark-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Gray Light",
+        "label": "Wayfindr Gray Light",
+        "uiTheme": "vs",
+        "path": "./themes/wayfindr-gray-light-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Gray Dark Soft",
+        "label": "Wayfindr Gray Dark Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wayfindr-gray-dark-soft-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Gray Light Soft",
+        "label": "Wayfindr Gray Light Soft",
+        "uiTheme": "vs",
+        "path": "./themes/wayfindr-gray-light-soft-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Gray Dark Contrast",
+        "label": "Wayfindr Gray Dark Contrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wayfindr-gray-dark-contrast-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Gray Light Contrast",
+        "label": "Wayfindr Gray Light Contrast",
+        "uiTheme": "vs",
+        "path": "./themes/wayfindr-gray-light-contrast-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Night",
+        "label": "Wayfindr Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wayfindr-night-color-theme.json"
+      },
+      {
+        "id": "Wayfindr Day",
+        "label": "Wayfindr Day",
+        "uiTheme": "vs",
+        "path": "./themes/wayfindr-day-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:legacy-icon": "node scripts/legacy-icon.mjs",
+    "check": "node scripts/build.mjs --check && node scripts/check.mjs",
+    "vscode:prepublish": "npm run check",
+    "package": "node scripts/vsix.mjs package",
+    "sideload": "node scripts/vsix.mjs sideload",
+    "changeset": "changeset",
+    "version": "changeset version && npm install --package-lock-only --ignore-scripts",
+    "release": "node scripts/vsix.mjs publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "3.0.3",
+    "@resvg/resvg-js": "2.6.2",
+    "@vscode/vsce": "4.0.0"
+  }
+}

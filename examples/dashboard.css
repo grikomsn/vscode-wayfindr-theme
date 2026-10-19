@@ -1,0 +1,26 @@
+:root {
+  --ink: #101828;
+  --gold: #efba5a;
+  --sage: #b1ceb3;
+}
+
+/* A calm control tower for things on the move. */
+.shipment-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  color: var(--ink);
+  background: #fcfcfd;
+  border: 1px solid var(--sage);
+  border-radius: 24px;
+}
+
+.shipment-card[data-status="delivered"]::before {
+  content: "Arrived";
+  font-weight: 600;
+  background: var(--gold);
+}
+
+@media (max-width: 640px) {
+  .shipment-card { grid-template-columns: 1fr; }
+}

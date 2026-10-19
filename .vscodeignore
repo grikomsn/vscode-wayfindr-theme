@@ -1,0 +1,14 @@
+.github/**
+.changeset/**
+.vscode/**
+scripts/**
+examples/**
+node_modules/**
+dist/**
+package-lock.json
+**/*.svg
+.gitignore
+.vscodeignore
+images/icon.png
+docs/assets.md
+AGENTS.md
