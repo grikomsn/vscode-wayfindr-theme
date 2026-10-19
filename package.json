@@ -23,7 +23,7 @@
     "gray",
     "contrast"
   ],
-  "icon": "images/icon-direction.png",
+  "icon": "images/icon-marketplace.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/grikomsn/vscode-wayfindr-theme.git"

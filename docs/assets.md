@@ -4,10 +4,10 @@ Generated October 20, 2026 with built-in imagegen. [Wayfindr](https://wayfindr.i
 
 | Asset | File | Brief |
 | --- | --- | --- |
-| Icon | [icon-direction.png](../images/icon-direction.png) | Northeast arrow inside an ink ring on gold |
+| Icon | [icon-marketplace.png](../images/icon-marketplace.png) | Northeast arrow inside an ink ring on gold; 256px export |
 | Cover | [cover.png](../images/cover.png) | Gold field, title, dotted world map, route arcs, ten swatches |
 
-The committed raster assets survive theme builds. `images/icon.svg` and `images/icon.png` are legacy sources; the old PNG is excluded from the VSIX.
+The committed raster assets survive theme builds. `images/icon-direction.png` preserves the original generated icon; the Marketplace copy is downscaled to fit its 1 MB limit. Original and legacy icon sources are excluded from the VSIX.
 
 ## Generation briefs
 

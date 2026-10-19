@@ -5,4 +5,4 @@
 - Run `npm run check` and `npm run package` for palette, manifest, asset, and release changes. Visually check changed themes in VS Code Insiders.
 - Add a Changeset for user-visible changes. Use the version pull request workflow for Marketplace releases.
 - Keep credentials only in protected process memory and GitHub Actions secrets. Never commit or log them.
-- `images/icon-direction.png` and `images/cover.png` are the selected generated assets. Preserve them during theme builds. Use imagegen for artwork edits; do not recreate or distort the Wayfindr logo.
+- `images/icon-direction.png` and `images/cover.png` are the selected generated assets; `images/icon-marketplace.png` is the 256px publishing export. Preserve them during theme builds. Use imagegen for artwork edits; do not recreate or distort the Wayfindr logo.

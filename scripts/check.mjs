@@ -19,6 +19,7 @@ assert.equal(new Set(pkg.contributes.themes.map((t) => t.id)).size, variants.len
 assert.deepEqual(pkg.contributes.themes.map((t) => t.id), variants.map((v) => v.label));
 await access(new URL(pkg.icon, root));
 const icon = await readFile(new URL(pkg.icon, root));
+assert.ok(icon.byteLength <= 1024 * 1024, 'Marketplace icon must not exceed 1024 KB');
 assert.equal(icon.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', 'Marketplace icon must be a PNG');
 assert.ok(icon.readUInt32BE(16) >= 128, 'Marketplace icon must be at least 128px wide');
 assert.equal(icon.readUInt32BE(16), icon.readUInt32BE(20), 'Marketplace icon must be square');

@@ -10,5 +10,6 @@ package-lock.json
 .gitignore
 .vscodeignore
 images/icon.png
+images/icon-direction.png
 docs/assets.md
 AGENTS.md
