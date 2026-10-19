@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1
+
+### Patch Changes
+
+- ea212c9: Prepare the first public release with ten Wayfindr themes, logo-free artwork, concise documentation, previews, and automated Marketplace releases.
+
 ## 0.3.0
 
 - Add six Gray themes: light and dark in Soft, Standard, and Contrast levels.
